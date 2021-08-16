@@ -1,0 +1,16 @@
+{
+  "name": "emr",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "serverless-iam-helper": "../../plugins/serverless-iam-helper",
+    "serverless-stack-termination-protection": "^1.0.4"
+  },
+  "dependencies": {}
+}

@@ -1,0 +1,119 @@
+service: emr
+
+frameworkVersion: "2"
+
+plugins:
+  - serverless-stack-termination-protection
+  - serverless-iam-helper
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  region: us-east-1
+  iam:
+    role:
+      path: ${ssm:/configuration/${self:custom.stage}/iam/path~true, ssm:/configuration/default/iam/path~true, "/"}
+      permissionsBoundary: ${ssm:/configuration/${self:custom.stage}/iam/permissionsBoundaryPolicy~true, ssm:/configuration/default/iam/permissionsBoundaryPolicy~true, ""}
+
+custom:
+  stage: ${opt:stage, self:provider.stage}
+  region: ${opt:region, self:provider.region}
+  serverlessTerminationProtection:
+    stages:
+      - master
+      - val
+      - production
+  vpcId: ${ssm:/configuration/${self:custom.stage}/vpc/id~true, ssm:/configuration/default/vpc/id~true}
+  ec2KeyName: ${ssm:/configuration/${self:custom.stage}/ec2KeyName~true, ssm:/configuration/default/ec2KeyName~true, "emr"}
+
+resources:
+  Resources:
+    EmrSecurityGroup:
+      Type: AWS::EC2::SecurityGroup
+      Properties:
+        GroupDescription: Security Group for the EMR Cluster.
+        VpcId: ${self:custom.vpcId}
+    EmrSecuityGroupsIngressSsh:
+      Type: AWS::EC2::SecurityGroupIngress
+      Properties:
+        CidrIp: "0.0.0.0/0"
+        IpProtocol: tcp
+        FromPort: 22
+        ToPort: 22
+        GroupId: !Sub "${EmrSecurityGroup}"
+    EmrRole:
+      Type: AWS::IAM::Role
+      Properties:
+        AssumeRolePolicyDocument:
+          Version: "2012-10-17"
+          Statement:
+            - Effect: "Allow"
+              Principal:
+                Service:
+                  - elasticmapreduce.amazonaws.com
+              Action: "sts:AssumeRole"
+        ManagedPolicyArns:
+          - arn:aws:iam::aws:policy/service-role/AmazonElasticMapReduceRole
+    EmrEc2Role:
+      Type: AWS::IAM::Role
+      Properties:
+        AssumeRolePolicyDocument:
+          Version: "2012-10-17"
+          Statement:
+            - Effect: "Allow"
+              Principal:
+                Service:
+                  - ec2.amazonaws.com
+              Action: "sts:AssumeRole"
+        ManagedPolicyArns:
+          - arn:aws:iam::aws:policy/service-role/AmazonElasticMapReduceforEC2Role
+        Policies:
+          - PolicyName: "AllowAllS3"
+            PolicyDocument:
+              Version: "2012-10-17"
+              Statement:
+                - Action: "s3:*"
+                  Effect: Allow
+                  Resource: "*"
+    EmrEc2InstanceProfile:
+      Type: AWS::IAM::InstanceProfile
+      Properties:
+        Roles:
+          - !Ref EmrEc2Role
+    EMR:
+      Type: AWS::EMR::Cluster
+      Properties:
+        Applications:
+          - Name: Spark
+          - Name: Zeppelin
+          - Name: Hadoop
+        Instances:
+          AdditionalMasterSecurityGroups:
+            - !Ref EmrSecurityGroup
+          AdditionalSlaveSecurityGroups:
+            - !Ref EmrSecurityGroup
+          Ec2KeyName: ${self:custom.ec2KeyName}
+          MasterInstanceGroup:
+            InstanceCount: 1
+            InstanceType: m5.xlarge
+            Market: ON_DEMAND
+            Name: emr-master-${self:custom.stage}
+          CoreInstanceGroup:
+            InstanceCount: 2
+            InstanceType: m5.xlarge
+            Market: ON_DEMAND
+            Name: emr-core-${self:custom.stage}
+        JobFlowRole: !Ref EmrEc2InstanceProfile
+        Name: "emr-cluster-${self:custom.stage}"
+        ReleaseLabel: emr-5.33.0
+        ScaleDownBehavior: TERMINATE_AT_TASK_COMPLETION
+        ServiceRole: !Ref EmrRole
+        VisibleToAllUsers: true
+    DataBucket:
+      Type: AWS::S3::Bucket
+      Properties:
+        BucketName: !Sub ${self:service.name}-${self:custom.stage}-data-${AWS::AccountId}
+        BucketEncryption:
+          ServerSideEncryptionConfiguration:
+            - ServerSideEncryptionByDefault:
+                SSEAlgorithm: AES256
