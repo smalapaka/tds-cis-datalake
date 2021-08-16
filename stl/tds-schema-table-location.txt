@@ -1,0 +1,2 @@
+SCHEMA,TABLE,LOCATION
+DEV,CIS,s3://tds-dev-data/cis-data/

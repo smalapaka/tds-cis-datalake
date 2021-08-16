@@ -1,0 +1,66 @@
+products:
+   /Users/smalapaka/tds-cis-datalake/src/main/scala/SparkWordCount.scala -> /Users/smalapaka/tds-cis-datalake/build/classes/scala/main/SparkWordCount$$anonfun$1.class
+   /Users/smalapaka/tds-cis-datalake/src/main/scala/SparkWordCount.scala -> /Users/smalapaka/tds-cis-datalake/build/classes/scala/main/SparkWordCount$$anonfun$2.class
+   /Users/smalapaka/tds-cis-datalake/src/main/scala/SparkWordCount.scala -> /Users/smalapaka/tds-cis-datalake/build/classes/scala/main/SparkWordCount$$anonfun$3.class
+   /Users/smalapaka/tds-cis-datalake/src/main/scala/SparkWordCount.scala -> /Users/smalapaka/tds-cis-datalake/build/classes/scala/main/SparkWordCount$$anonfun$4.class
+   /Users/smalapaka/tds-cis-datalake/src/main/scala/SparkWordCount.scala -> /Users/smalapaka/tds-cis-datalake/build/classes/scala/main/SparkWordCount$.class
+   /Users/smalapaka/tds-cis-datalake/src/main/scala/SparkWordCount.scala -> /Users/smalapaka/tds-cis-datalake/build/classes/scala/main/SparkWordCount$delayedInit$body.class
+   /Users/smalapaka/tds-cis-datalake/src/main/scala/SparkWordCount.scala -> /Users/smalapaka/tds-cis-datalake/build/classes/scala/main/SparkWordCount.class
+   /Users/smalapaka/tds-cis-datalake/src/main/scala/tds/common/AbstractSparkJob.scala -> /Users/smalapaka/tds-cis-datalake/build/classes/scala/main/tds/common/AbstractSparkJob$$anonfun$setJobConfigParameters$1.class
+   /Users/smalapaka/tds-cis-datalake/src/main/scala/tds/common/AbstractSparkJob.scala -> /Users/smalapaka/tds-cis-datalake/build/classes/scala/main/tds/common/AbstractSparkJob$$typecreator4$1.class
+   /Users/smalapaka/tds-cis-datalake/src/main/scala/tds/common/AbstractSparkJob.scala -> /Users/smalapaka/tds-cis-datalake/build/classes/scala/main/tds/common/AbstractSparkJob$$typecreator8$1.class
+   /Users/smalapaka/tds-cis-datalake/src/main/scala/tds/common/AbstractSparkJob.scala -> /Users/smalapaka/tds-cis-datalake/build/classes/scala/main/tds/common/AbstractSparkJob.class
+   /Users/smalapaka/tds-cis-datalake/src/main/scala/tds/core/CISJsonToParquetJob.scala -> /Users/smalapaka/tds-cis-datalake/build/classes/scala/main/tds/core/CISJsonToParquetJob$.class
+   /Users/smalapaka/tds-cis-datalake/src/main/scala/tds/core/CISJsonToParquetJob.scala -> /Users/smalapaka/tds-cis-datalake/build/classes/scala/main/tds/core/CISJsonToParquetJob.class
+   /Users/smalapaka/tds-cis-datalake/src/main/scala/tds/core/TdsDataProcessJob.scala -> /Users/smalapaka/tds-cis-datalake/build/classes/scala/main/tds/core/TdsDataProcessJob$.class
+   /Users/smalapaka/tds-cis-datalake/src/main/scala/tds/core/TdsDataProcessJob.scala -> /Users/smalapaka/tds-cis-datalake/build/classes/scala/main/tds/core/TdsDataProcessJob.class
+   /Users/smalapaka/tds-cis-datalake/src/main/scala/tds/util/CommonUtils.scala -> /Users/smalapaka/tds-cis-datalake/build/classes/scala/main/tds/util/CommonUtils$$anonfun$newMap$1.class
+   /Users/smalapaka/tds-cis-datalake/src/main/scala/tds/util/CommonUtils.scala -> /Users/smalapaka/tds-cis-datalake/build/classes/scala/main/tds/util/CommonUtils$.class
+   /Users/smalapaka/tds-cis-datalake/src/main/scala/tds/util/CommonUtils.scala -> /Users/smalapaka/tds-cis-datalake/build/classes/scala/main/tds/util/CommonUtils.class
+binary dependencies:
+   /Users/smalapaka/tds-cis-datalake/src/main/scala/SparkWordCount.scala -> /Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/lib/rt.jar
+   /Users/smalapaka/tds-cis-datalake/src/main/scala/SparkWordCount.scala -> /Users/smalapaka/.gradle/caches/modules-2/files-2.1/org.apache.spark/spark-core_2.11/2.4.7/620907c76d4000d3700a8a8ccd75b3cf519a0cf1/spark-core_2.11-2.4.7.jar
+   /Users/smalapaka/tds-cis-datalake/src/main/scala/SparkWordCount.scala -> /Users/smalapaka/.gradle/caches/modules-2/files-2.1/org.apache.spark/spark-sql_2.11/2.4.7/5928acdea10daad9c2e8efc882b9b9136647a2e9/spark-sql_2.11-2.4.7.jar
+   /Users/smalapaka/tds-cis-datalake/src/main/scala/SparkWordCount.scala -> /Users/smalapaka/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-library/2.11.12/bf5534e6fec3d665bd6419c952a929a8bdd4b591/scala-library-2.11.12.jar
+   /Users/smalapaka/tds-cis-datalake/src/main/scala/tds/common/AbstractSparkJob.scala -> /Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/lib/rt.jar
+   /Users/smalapaka/tds-cis-datalake/src/main/scala/tds/common/AbstractSparkJob.scala -> /Users/smalapaka/.gradle/caches/modules-2/files-2.1/log4j/log4j/1.2.17/5af35056b4d257e4b64b9e8069c0746e8b08629f/log4j-1.2.17.jar
+   /Users/smalapaka/tds-cis-datalake/src/main/scala/tds/common/AbstractSparkJob.scala -> /Users/smalapaka/.gradle/caches/modules-2/files-2.1/org.apache.spark/spark-catalyst_2.11/2.4.7/71a9c60c110996515478de5102d47813b4457f7c/spark-catalyst_2.11-2.4.7.jar
+   /Users/smalapaka/tds-cis-datalake/src/main/scala/tds/common/AbstractSparkJob.scala -> /Users/smalapaka/.gradle/caches/modules-2/files-2.1/org.apache.spark/spark-sql_2.11/2.4.7/5928acdea10daad9c2e8efc882b9b9136647a2e9/spark-sql_2.11-2.4.7.jar
+   /Users/smalapaka/tds-cis-datalake/src/main/scala/tds/common/AbstractSparkJob.scala -> /Users/smalapaka/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-library/2.11.12/bf5534e6fec3d665bd6419c952a929a8bdd4b591/scala-library-2.11.12.jar
+   /Users/smalapaka/tds-cis-datalake/src/main/scala/tds/common/AbstractSparkJob.scala -> /Users/smalapaka/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-reflect/2.11.12/2bb23c13c527566d9828107ca4108be2a2c06f01/scala-reflect-2.11.12.jar
+   /Users/smalapaka/tds-cis-datalake/src/main/scala/tds/core/CISJsonToParquetJob.scala -> /Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/lib/rt.jar
+   /Users/smalapaka/tds-cis-datalake/src/main/scala/tds/core/CISJsonToParquetJob.scala -> /Users/smalapaka/.gradle/caches/modules-2/files-2.1/org.apache.spark/spark-catalyst_2.11/2.4.7/71a9c60c110996515478de5102d47813b4457f7c/spark-catalyst_2.11-2.4.7.jar
+   /Users/smalapaka/tds-cis-datalake/src/main/scala/tds/core/CISJsonToParquetJob.scala -> /Users/smalapaka/.gradle/caches/modules-2/files-2.1/org.apache.spark/spark-core_2.11/2.4.7/620907c76d4000d3700a8a8ccd75b3cf519a0cf1/spark-core_2.11-2.4.7.jar
+   /Users/smalapaka/tds-cis-datalake/src/main/scala/tds/core/CISJsonToParquetJob.scala -> /Users/smalapaka/.gradle/caches/modules-2/files-2.1/org.apache.spark/spark-sql_2.11/2.4.7/5928acdea10daad9c2e8efc882b9b9136647a2e9/spark-sql_2.11-2.4.7.jar
+   /Users/smalapaka/tds-cis-datalake/src/main/scala/tds/core/CISJsonToParquetJob.scala -> /Users/smalapaka/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-library/2.11.12/bf5534e6fec3d665bd6419c952a929a8bdd4b591/scala-library-2.11.12.jar
+   /Users/smalapaka/tds-cis-datalake/src/main/scala/tds/core/TdsDataProcessJob.scala -> /Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/lib/rt.jar
+   /Users/smalapaka/tds-cis-datalake/src/main/scala/tds/core/TdsDataProcessJob.scala -> /Users/smalapaka/.gradle/caches/modules-2/files-2.1/org.apache.spark/spark-catalyst_2.11/2.4.7/71a9c60c110996515478de5102d47813b4457f7c/spark-catalyst_2.11-2.4.7.jar
+   /Users/smalapaka/tds-cis-datalake/src/main/scala/tds/core/TdsDataProcessJob.scala -> /Users/smalapaka/.gradle/caches/modules-2/files-2.1/org.apache.spark/spark-core_2.11/2.4.7/620907c76d4000d3700a8a8ccd75b3cf519a0cf1/spark-core_2.11-2.4.7.jar
+   /Users/smalapaka/tds-cis-datalake/src/main/scala/tds/core/TdsDataProcessJob.scala -> /Users/smalapaka/.gradle/caches/modules-2/files-2.1/org.apache.spark/spark-sql_2.11/2.4.7/5928acdea10daad9c2e8efc882b9b9136647a2e9/spark-sql_2.11-2.4.7.jar
+   /Users/smalapaka/tds-cis-datalake/src/main/scala/tds/core/TdsDataProcessJob.scala -> /Users/smalapaka/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-library/2.11.12/bf5534e6fec3d665bd6419c952a929a8bdd4b591/scala-library-2.11.12.jar
+   /Users/smalapaka/tds-cis-datalake/src/main/scala/tds/util/CommonUtils.scala -> /Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/lib/rt.jar
+   /Users/smalapaka/tds-cis-datalake/src/main/scala/tds/util/CommonUtils.scala -> /Users/smalapaka/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-library/2.11.12/bf5534e6fec3d665bd6419c952a929a8bdd4b591/scala-library-2.11.12.jar
+source dependencies:
+   /Users/smalapaka/tds-cis-datalake/src/main/scala/tds/common/AbstractSparkJob.scala -> /Users/smalapaka/tds-cis-datalake/src/main/scala/tds/util/CommonUtils.scala
+   /Users/smalapaka/tds-cis-datalake/src/main/scala/tds/core/CISJsonToParquetJob.scala -> /Users/smalapaka/tds-cis-datalake/src/main/scala/tds/common/AbstractSparkJob.scala
+   /Users/smalapaka/tds-cis-datalake/src/main/scala/tds/core/TdsDataProcessJob.scala -> /Users/smalapaka/tds-cis-datalake/src/main/scala/tds/common/AbstractSparkJob.scala
+external dependencies:
+class names:
+   /Users/smalapaka/tds-cis-datalake/src/main/scala/SparkWordCount.scala -> SparkWordCount
+   /Users/smalapaka/tds-cis-datalake/src/main/scala/SparkWordCount.scala -> SparkWordCount$
+   /Users/smalapaka/tds-cis-datalake/src/main/scala/SparkWordCount.scala -> SparkWordCount$$anonfun$1
+   /Users/smalapaka/tds-cis-datalake/src/main/scala/SparkWordCount.scala -> SparkWordCount$$anonfun$2
+   /Users/smalapaka/tds-cis-datalake/src/main/scala/SparkWordCount.scala -> SparkWordCount$$anonfun$3
+   /Users/smalapaka/tds-cis-datalake/src/main/scala/SparkWordCount.scala -> SparkWordCount$$anonfun$4
+   /Users/smalapaka/tds-cis-datalake/src/main/scala/SparkWordCount.scala -> SparkWordCount$delayedInit$body
+   /Users/smalapaka/tds-cis-datalake/src/main/scala/tds/common/AbstractSparkJob.scala -> tds.common.AbstractSparkJob
+   /Users/smalapaka/tds-cis-datalake/src/main/scala/tds/common/AbstractSparkJob.scala -> tds.common.AbstractSparkJob$$anonfun$setJobConfigParameters$1
+   /Users/smalapaka/tds-cis-datalake/src/main/scala/tds/common/AbstractSparkJob.scala -> tds.common.AbstractSparkJob$$typecreator4$1
+   /Users/smalapaka/tds-cis-datalake/src/main/scala/tds/common/AbstractSparkJob.scala -> tds.common.AbstractSparkJob$$typecreator8$1
+   /Users/smalapaka/tds-cis-datalake/src/main/scala/tds/core/CISJsonToParquetJob.scala -> tds.core.CISJsonToParquetJob
+   /Users/smalapaka/tds-cis-datalake/src/main/scala/tds/core/CISJsonToParquetJob.scala -> tds.core.CISJsonToParquetJob$
+   /Users/smalapaka/tds-cis-datalake/src/main/scala/tds/core/TdsDataProcessJob.scala -> tds.core.TdsDataProcessJob
+   /Users/smalapaka/tds-cis-datalake/src/main/scala/tds/core/TdsDataProcessJob.scala -> tds.core.TdsDataProcessJob$
+   /Users/smalapaka/tds-cis-datalake/src/main/scala/tds/util/CommonUtils.scala -> tds.util.CommonUtils
+   /Users/smalapaka/tds-cis-datalake/src/main/scala/tds/util/CommonUtils.scala -> tds.util.CommonUtils$
+   /Users/smalapaka/tds-cis-datalake/src/main/scala/tds/util/CommonUtils.scala -> tds.util.CommonUtils$$anonfun$newMap$1
